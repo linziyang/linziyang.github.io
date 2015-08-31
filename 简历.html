@@ -12,7 +12,7 @@
 	<header>
 		<h1>林子洋</h1>
 		<ul class="social">
-			<li><a href="lzy.books@gmail.com"><i class="fa fa-google"></i> lzy.books@gmail.com</a></li>
+			<li><a href="lzy.books@foxmail.com"><i class="fa fa-envelope-square"></i> lzy.books@foxmail.com</a></li>
 			<li><a href="https://www.linkedin.com/in/ziyanglin"><i class="fa fa-linkedin-square"></i> linkedin.com/in/ziyanglin</a></li>
 		</ul>
 		<ul class="contact">
@@ -55,8 +55,10 @@
 				<div class="date">2014.1 - 至今</div>
 				<div class="org">宁波宽信资产管理有限公司</div>
 				<ul class="list">
-					<li>开发事件驱动策略并进行实盘交易。(2000万)</li>
+					<li>开发事件驱动策略（业绩预告、业绩快报、分析师报告）并进行实盘交易。(2000万)</li>
 					<li>开发两个Alpha策略并进行实盘交易。(回测夏普5.0, 3000万)</li>
+					<li>通过构建一个可以对冲母基金大部分波动的工具，使得我们能够以较低的风险来获取分级基金市场中的溢价和折价。</li>
+					<li>基本面量化（非行业中性）：选择低市盈率、低市净率、高分红的股票。同时在不同的市场环境中设定不同的阈值来定义低市盈率和低市净率。</li>
 				</ul>
 			</div>
 			<div class="item">
@@ -64,7 +66,7 @@
 				<div class="date">2013.2 - 2013.8</div>
 				<div class="org">上海鸣石投资有限公司</div>
 				<ul class="list">
-					<li>搭建股票交易系统并进行期现套利交易。</li>
+					<li>搭建股票交易系统并进行期现套利交易（在实习结束后为鸣石开发过对应5个不同券商的股票交易系统）。</li>
 					<li>策略研究：利用金融新闻来预测股票走势。</li>
                                         <li>参与开发并对CTP期货交易系统进行维护。</li>
 				</ul>
@@ -75,7 +77,7 @@
 			</div>
 
 			<div class="item">
-				<h3>Python实习生  EMC,GreenPlum</h3>
+				<h3>Python实习生  EMC, GreenPlum</h3>
 				<div class="date">2012.8 - 2013.2</div>
 			</div>		</div>
 	</section>
@@ -87,34 +89,28 @@
 				<h3>Insanity Alpha</h3>
 				<p class="overview">在我搭建的Alpha框架下，遍历数十万个因子，并从中选取出具有预测能力的因子来构建Alpha策略。</p>
 				<ul class="list">
-					<li>因为有足够多的因子，因此可以构建出50个甚至更多的相关性很低的子策略，然后将这些子策略合并成一个最终的大策略。</li>
-					<li>在选择因子时，使用行业的平均回报作为衡量基准。</li>
-					<li>最终的投资组合里面有超过500只股票，因而策略容量足够大。</li>
-					<li>使用Julia编程语言实现高速的回测速度。</li>
-					<li>以亿为量级的CPU计算。</li>
+					<li>使用行业的平均回报作为衡量基准来搜索有预测能力的因子，降低SMB因子对模型的影响（Fama三因子模型）。</li>
+					<li>使用足够多的因子构建50个低相关性的子策略，之后再将这些子策略合并成最终的策略。在最后的投资组合中股票个数超过500只。</li>
+					<li>使用Julia编程语言进行回测，这使得亿量级的回测计算成为可能</li>
 					
 				</ul>
 			</div>
 			<div class="item">
-				<h3>股票交易系统</h3>
-				<p class="overview">为上海鸣石公司对接多个不同的证券公司。</p>
+				<h3>量化文本数据</h3>
+				<p class="overview">这是我研究生期间的主要研究方向。</p>
+					<li>分析师总是倾向于给股票买入评级，但是分析师报告的文本内容却揭露了他们对股票的真实看法。</li>
+					<li>金融新闻发布之后总是会影响相关的个股价格。</li>
+					<li>通过分析雪球社区中相关股票的评论来量化相应股票的市场情绪。</li>
 				
 			</div>
 			<div class="item">
-				<h3>行业轮动</h3>
+				<h3><strong>行业轮动</strong></h3>
 				<p class="overview">考虑到在中国投资者中显著的羊群效应，因而策略倾向于研究A股市场的动量效应。</p>
-				
+					<li>构建每个行业的可交易的指数，各个指数的价格波动反应了相关行业的总体价格波动。</li>
+					<li>对行业之间的动量效应进行量化分析。</li>
+	
 			</div>
-			<div class="item">
-				<h3>基本面选股策略</h3>
-				<p class="overview">将传统投资者的选股方法量化。</p>
-				
-			</div>
-			<div class="item">
-				<h3>分级基金套利</h3>
-				<p class="overview">分级基金市场存在着很多溢价和折价的情况，只有我们能够构建出一个工具来很好的对冲母基金的波动，我们就可以进行套利交易。</p>
-				
-			</div>
+			
 		</div>
 	</section>
 
@@ -125,7 +121,7 @@
 			<table>
 				<tr>
 					<td>自我评价</td>
-					<td>有策略研发经验和实际操盘经验，并能够进行交易系统开发，同时用优异的实盘业绩。</td>
+					<td>有策略研发经验和实际操盘经验，了解交易系统开发，同时有优异的实盘业绩。</td>
 				</tr>
 				<tr>
 					<td>性格</td>
