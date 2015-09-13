@@ -3,6 +3,161 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>林子洋</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/resume.css">
+</head>
+
+<body>
+	<header>
+		<h1>林子洋</h1>
+		<ul class="social">
+			<li><a href="lzy.books@foxmail.com"><i class="fa fa-envelope-square"></i> lzy.books@foxmail.com</a></li>
+			<li><a href="https://www.linkedin.com/in/ziyanglin"><i class="fa fa-linkedin-square"></i> linkedin.com/in/ziyanglin</a></li>
+		</ul>
+		<ul class="contact">
+			<li>+86 18060431817</li>
+			<li>北京</li>
+		</ul>
+	</header>
+
+	<section>
+		<h2 class="col-left">Education</h2>
+		<div class="col-right">
+			<div class="item">
+				<h3>计算机科学 工学硕士</h3>
+				<div class="date">2013.9 - 2016.6</div>
+				<div class="org">中国人民大学</div>
+			</div>
+			<div class="item">
+				<h3>网络工程 工学学位(1/60)</h3>
+				<div class="date">2009.9 - 2013.6</div>
+				<div class="org">大连理工大学</div>
+			</div>	
+	                <div class="item">
+				<h3>国际经济与贸易 第二学位 肄业</h3>
+				<div class="date">2013.9 - 2015.6</div>
+				<div class="org">对外经济贸易大学</div>
+			</div>	
+			<div class="item">
+				<h3>森林系 交换生</h3>
+				<div class="date">2012.2 - 2012.6</div>
+				<div class="org">台湾中兴大学</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2 class="col-left">实习经历</h2>
+		<div class="col-right">
+			<div class="item">
+				<h3>量化交易员</h3>
+				<div class="date">2014.1 - 2015.7</div>
+				<div class="org">宁波宽信资产管理有限公司</div>
+				<ul class="list">
+					<li>开发事件驱动策略（业绩预告、业绩快报、分析师报告）并进行实盘交易。(2000万)</li>
+					<li>开发两个Alpha策略并进行实盘交易。(3000万)</li>
+					<li>通过构建一个可以对冲母基金大部分波动的工具，使得我们能够以较低的风险来获取分级基金市场中的溢价和折价。</li>
+					<li>基本面量化（非行业中性）：选择低市盈率、低市净率、高分红的股票。同时在不同的市场环境中设定不同的阈值来定义低市盈率和低市净率。</li>
+				</ul>
+			</div>
+			<div class="item">
+				<h3>策略 & 系统开发实习</h3>
+				<div class="date">2013.2 - 2013.8</div>
+				<div class="org">上海鸣石投资有限公司</div>
+				<ul class="list">
+					<li>搭建股票交易系统并进行期现套利交易（在实习结束后为鸣石开发过对应5个不同券商的股票交易系统）。</li>
+					<li>策略研究：利用金融新闻来预测股票走势。</li>
+                                        <li>参与开发并对CTP期货交易系统进行维护。</li>
+				</ul>
+			</div>
+			<div class="item">
+				<h3>开发债券定价模型 中融华信国际资产管理有限公司</h3>
+				<div class="date">2014.8 - 2014.9</div>
+			</div>
+
+			<div class="item">
+				<h3>Python实习生  EMC, GreenPlum</h3>
+				<div class="date">2012.8 - 2013.2</div>
+			</div>		</div>
+	</section>
+
+	<section>
+		<h2 class="col-left">项目 & 正在进行的研究</h2>
+		<div class="col-right">
+			<div class="item">
+				<h3>Insanity Alpha</h3>
+				<p class="overview">在我搭建的Alpha框架下，遍历数十万个因子，并从中选取出具有预测能力的因子来构建Alpha策略。</p>
+				<ul class="list">
+					<li>使用行业的平均回报作为衡量基准来搜索有预测能力的因子，降低SMB因子对模型的影响（Fama三因子模型）。</li>
+					<li>使用足够多的因子构建50个低相关性的子策略，之后再将这些子策略合并成最终的策略。在最终的投资组合中股票个数超过500只。</li>
+					<li>使用Julia编程语言进行回测，这使得亿量级的回测计算成为可能。</li>
+					
+				</ul>
+			</div>
+			<div class="item">
+				<h3>量化文本数据</h3>
+				<p class="overview">这是我研究生期间的主要研究方向。</p>
+					<li>分析师总是倾向于给股票买入评级，但是分析师报告的文本内容却揭露了他们对股票的真实看法。</li>
+					<li>金融新闻发布之后总是会影响相关的个股价格。</li>
+					<li>通过分析雪球社区中相关股票的评论来量化相应股票的市场情绪。</li>
+				
+			</div>
+			<div class="item">
+				<h3><strong>行业轮动</strong></h3>
+				<p class="overview">考虑到在中国投资者中显著的羊群效应，因而策略倾向于研究A股市场的动量效应。</p>
+					<li>构建每个行业的可交易的指数，各个指数的价格波动反映了相关行业总体的价格波动。</li>
+					<li>对行业之间的动量效应进行量化分析。</li>
+	
+			</div>
+			
+		</div>
+	</section>
+
+
+	<section>
+		<h2 class="col-left">其他</h2>
+		<div class="col-right">
+			<table>
+				<tr>
+					<td>自我评价</td>
+					<td>有策略研发经验和实际操盘经验，了解交易系统开发，同时有优异的实盘业绩。</td>
+				</tr>
+				<tr>
+					<td>性格</td>
+					<td>勤奋, 工作兢兢业业， 富有激情。</td>
+				</tr>
+				<tr>
+					<td>技能</td>
+					<td>R, Python, Julia, C/C++。</td>
+				</tr>
+				
+				<tr>
+					<td>爱好</td>
+					<td>阅读, 运动。</td>
+				</tr>
+
+			</table>
+		</div>
+	</section>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/global.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ziyang Lin</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/resume.css">
